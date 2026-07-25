@@ -1,0 +1,58 @@
+[project]
+name = "clinvar-history"
+version = "0.1.0"
+description = "Disk-bounded longitudinal ClinVar classification pipeline"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Andrew Ponomarev", email = "19895289+superbsky@users.noreply.github.com" },
+]
+keywords = ["ClinVar", "bioinformatics", "genomics", "reclassification"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.1",
+    "duckdb>=1.3",
+    "httpx>=0.28",
+    "pyarrow>=20",
+]
+
+[project.urls]
+Documentation = "https://github.com/superbsky/clinvar-history#readme"
+Repository = "https://github.com/superbsky/clinvar-history"
+Issues = "https://github.com/superbsky/clinvar-history/issues"
+Report = "https://github.com/superbsky/clinvar-history/blob/main/docs/full-backfill-results.md"
+
+[project.scripts]
+clinvar-history = "clinvar_history.cli:main"
+
+[dependency-groups]
+dev = [
+    "PyYAML<7",
+    "markdown-it-py<5",
+    "pytest>=8.4",
+    "ruff>=0.12",
+]
+
+[build-system]
+requires = ["hatchling==1.31.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/clinvar_history"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"

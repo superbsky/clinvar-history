@@ -1,0 +1,41 @@
+[pilot]
+name = "2020-early-schema-and-resume"
+raw_files_retained = false
+max_lag_days = 35
+
+[selection]
+vcf_release_dates = [
+  "2020-01-06",
+  "2020-01-13",
+  "2020-01-20",
+  "2020-01-27",
+]
+submission_release_dates = [
+  "2020-01-01",
+  "2020-02-01",
+  "2020-03-01",
+]
+
+[budget]
+compressed_input_bytes = 232622241
+safe_disk_bytes = 1073741824
+
+[observed]
+retained_data_kib = 25676
+result_tables_kib = 192
+vcv_latest_rows = 616550
+scv_latest_rows = 1056294
+vcv_raw_classification_events = 1372
+vcv_canonical_classification_events = 1366
+scv_reclassification_events = 575
+scv_addition_attributions = 1147
+expert_panel_addition_attributions = 93
+multiple_candidate_attributions = 58
+condition_change_attributions = 17
+exact_matching_scv_reclassification_attributions = 15
+unexplained_attributions = 36
+vcv_incident_vus_resolution_episodes = 1474
+scv_incident_vus_resolution_episodes = 11735
+vcf_peak_rss_bytes = 1719566336
+scv_peak_rss_bytes = 2757541888
+attribution_peak_rss_bytes = 2027962368

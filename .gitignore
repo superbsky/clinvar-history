@@ -1,0 +1,20 @@
+.worktrees/
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.coverage
+data/
+artifacts/
+results/
+logs/
+dist/
+*.egg-info/
+
+# Local planning and working drafts
+internal/
+docs/plans/
+docs/*-prompt.md
+docs/*-draft.md
+docs/contributor-pilot.md
+docs/research-tables/liang-crosscheck/chronology.json

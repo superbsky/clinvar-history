@@ -1,0 +1,7 @@
+##fileformat=VCFv4.2
+##fileDate=20240108
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+1	100	123	A	G	.	.	ALLELEID=456;CLNSIG=Likely_pathogenic;CLNREVSTAT=criteria_provided,_single_submitter;GENEINFO=GENE1:1;CLNDISDB=MONDO:0001|MedGen:C0001;CLNVC=single_nucleotide_variant
+2	200	124	C	T	.	.	CLNSIG=Benign
+4	400	126	T	C	.	.	ALLELEID=459;CLNSIG=Conflicting_classifications_of_pathogenicity;CLNREVSTAT=criteria_provided,_conflicting_classifications;GENEINFO=GENE3:3;CLNDISDB=MONDO:0003;CLNVC=single_nucleotide_variant
+

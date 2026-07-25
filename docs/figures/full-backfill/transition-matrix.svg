@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 1050" role="img" id="transition-matrix" aria-labelledby="transition-matrix-title transition-matrix-desc">
+<title id="transition-matrix-title">Directed canonical classification transitions</title>
+<desc id="transition-matrix-desc">An eight-by-eight matrix shows counts for each old-to-new canonical classification pair; color intensity uses a logarithmic scale.</desc>
+<style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+.title { font-size: 30px; font-weight: 700; letter-spacing: -0.3px; }
+.subtitle { font-size: 15px; fill: #5B6775; }
+.panel-title { font-size: 17px; font-weight: 700; }
+.axis { font-size: 12px; fill: #5B6775; }
+.label { font-size: 14px; }
+.value { font-size: 13px; font-weight: 650; }
+.small { font-size: 11px; fill: #5B6775; }
+.note { font-size: 13px; fill: #5B6775; }
+.matrix-column-label { font-size: 12px; fill: #5B6775; }
+.grid { stroke: #D8DEE6; stroke-width: 1; }
+.axis-line { stroke: #8A96A3; stroke-width: 1; }</style>
+<rect width="1120" height="1050" fill="#FFFFFF"/>
+<text x="56" y="48" fill="#17212B" class="title">Directed canonical classification transitions</text>
+<text x="56" y="75" fill="#17212B" class="subtitle">All 479,525 transitions; rows are old states and columns are new states.</text>
+<text x="56" y="558" fill="#17212B" class="panel-title" transform="rotate(-90 56 558)" text-anchor="middle">Old classification</text>
+<text x="658" y="108" fill="#17212B" class="panel-title" text-anchor="middle">New classification</text>
+<text x="312" y="275" fill="#17212B" class="axis" text-anchor="end">Benign</text>
+<rect x="330" y="230" width="80" height="80" rx="3" fill="#F4F7FA" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<rect x="412" y="230" width="80" height="80" rx="3" fill="#63A8CF" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="452" y="275" fill="#FFFFFF" class="value" text-anchor="middle">1,078</text>
+<rect x="494" y="230" width="80" height="80" rx="3" fill="#87BCDA" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="534" y="275" fill="#17212B" class="value" text-anchor="middle">188</text>
+<rect x="576" y="230" width="80" height="80" rx="3" fill="#B9D7E9" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="616" y="275" fill="#17212B" class="value" text-anchor="middle">16</text>
+<rect x="658" y="230" width="80" height="80" rx="3" fill="#98C5DF" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="698" y="275" fill="#17212B" class="value" text-anchor="middle">82</text>
+<rect x="740" y="230" width="80" height="80" rx="3" fill="#3F94C5" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="780" y="275" fill="#FFFFFF" class="value" text-anchor="middle">6,078</text>
+<rect x="822" y="230" width="80" height="80" rx="3" fill="#1C81BA" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="862" y="275" fill="#FFFFFF" class="value" text-anchor="middle">32,859</text>
+<rect x="904" y="230" width="80" height="80" rx="3" fill="#A3CBE2" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="944" y="275" fill="#17212B" class="value" text-anchor="middle">47</text>
+<text x="312" y="357" fill="#17212B" class="axis" text-anchor="end">Likely benign</text>
+<rect x="330" y="312" width="80" height="80" rx="3" fill="#3890C2" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="370" y="357" fill="#FFFFFF" class="value" text-anchor="middle">8,515</text>
+<rect x="412" y="312" width="80" height="80" rx="3" fill="#F4F7FA" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<rect x="494" y="312" width="80" height="80" rx="3" fill="#519ECA" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="534" y="357" fill="#FFFFFF" class="value" text-anchor="middle">2,534</text>
+<rect x="576" y="312" width="80" height="80" rx="3" fill="#9BC7E0" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="616" y="357" fill="#17212B" class="value" text-anchor="middle">70</text>
+<rect x="658" y="312" width="80" height="80" rx="3" fill="#B1D2E6" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="698" y="357" fill="#17212B" class="value" text-anchor="middle">24</text>
+<rect x="740" y="312" width="80" height="80" rx="3" fill="#187FB9" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="780" y="357" fill="#FFFFFF" class="value" text-anchor="middle">38,682</text>
+<rect x="822" y="312" width="80" height="80" rx="3" fill="#1980B9" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="862" y="357" fill="#FFFFFF" class="value" text-anchor="middle">37,638</text>
+<rect x="904" y="312" width="80" height="80" rx="3" fill="#BCD8E9" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="944" y="357" fill="#17212B" class="value" text-anchor="middle">14</text>
+<text x="312" y="439" fill="#17212B" class="axis" text-anchor="end">VUS</text>
+<rect x="330" y="394" width="80" height="80" rx="3" fill="#4296C5" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="370" y="439" fill="#FFFFFF" class="value" text-anchor="middle">5,231</text>
+<rect x="412" y="394" width="80" height="80" rx="3" fill="#1F83BB" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="452" y="439" fill="#FFFFFF" class="value" text-anchor="middle">27,715</text>
+<rect x="494" y="394" width="80" height="80" rx="3" fill="#F4F7FA" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<rect x="576" y="394" width="80" height="80" rx="3" fill="#4095C5" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="616" y="439" fill="#FFFFFF" class="value" text-anchor="middle">5,696</text>
+<rect x="658" y="394" width="80" height="80" rx="3" fill="#499AC8" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="698" y="439" fill="#FFFFFF" class="value" text-anchor="middle">3,673</text>
+<rect x="740" y="394" width="80" height="80" rx="3" fill="#0072B2" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="780" y="439" fill="#FFFFFF" class="value" text-anchor="middle">123,962</text>
+<rect x="822" y="394" width="80" height="80" rx="3" fill="#77B3D5" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="862" y="439" fill="#17212B" class="value" text-anchor="middle">399</text>
+<rect x="904" y="394" width="80" height="80" rx="3" fill="#94C3DE" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="944" y="439" fill="#17212B" class="value" text-anchor="middle">100</text>
+<text x="312" y="521" fill="#17212B" class="axis" text-anchor="end">Likely pathogenic</text>
+<rect x="330" y="476" width="80" height="80" rx="3" fill="#9EC8E1" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="370" y="521" fill="#17212B" class="value" text-anchor="middle">61</text>
+<rect x="412" y="476" width="80" height="80" rx="3" fill="#8EC0DC" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="452" y="521" fill="#17212B" class="value" text-anchor="middle">131</text>
+<rect x="494" y="476" width="80" height="80" rx="3" fill="#54A0CB" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="534" y="521" fill="#FFFFFF" class="value" text-anchor="middle">2,139</text>
+<rect x="576" y="476" width="80" height="80" rx="3" fill="#F4F7FA" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<rect x="658" y="476" width="80" height="80" rx="3" fill="#4296C6" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="698" y="521" fill="#FFFFFF" class="value" text-anchor="middle">5,118</text>
+<rect x="740" y="476" width="80" height="80" rx="3" fill="#348FC1" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="780" y="521" fill="#FFFFFF" class="value" text-anchor="middle">10,016</text>
+<rect x="822" y="476" width="80" height="80" rx="3" fill="#2888BE" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="862" y="521" fill="#FFFFFF" class="value" text-anchor="middle">18,557</text>
+<rect x="904" y="476" width="80" height="80" rx="3" fill="#9FC9E1" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="944" y="521" fill="#17212B" class="value" text-anchor="middle">59</text>
+<text x="312" y="603" fill="#17212B" class="axis" text-anchor="end">Pathogenic</text>
+<rect x="330" y="558" width="80" height="80" rx="3" fill="#8CBEDB" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="370" y="603" fill="#17212B" class="value" text-anchor="middle">145</text>
+<rect x="412" y="558" width="80" height="80" rx="3" fill="#97C4DF" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="452" y="603" fill="#17212B" class="value" text-anchor="middle">85</text>
+<rect x="494" y="558" width="80" height="80" rx="3" fill="#4E9DC9" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="534" y="603" fill="#FFFFFF" class="value" text-anchor="middle">2,864</text>
+<rect x="576" y="558" width="80" height="80" rx="3" fill="#4698C7" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="616" y="603" fill="#FFFFFF" class="value" text-anchor="middle">4,186</text>
+<rect x="658" y="558" width="80" height="80" rx="3" fill="#F4F7FA" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<rect x="740" y="558" width="80" height="80" rx="3" fill="#4698C7" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="780" y="603" fill="#FFFFFF" class="value" text-anchor="middle">4,329</text>
+<rect x="822" y="558" width="80" height="80" rx="3" fill="#2285BC" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="862" y="603" fill="#FFFFFF" class="value" text-anchor="middle">24,109</text>
+<rect x="904" y="558" width="80" height="80" rx="3" fill="#60A6CE" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="944" y="603" fill="#FFFFFF" class="value" text-anchor="middle">1,236</text>
+<text x="312" y="685" fill="#17212B" class="axis" text-anchor="end">Conflict</text>
+<rect x="330" y="640" width="80" height="80" rx="3" fill="#529FCA" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="370" y="685" fill="#FFFFFF" class="value" text-anchor="middle">2,432</text>
+<rect x="412" y="640" width="80" height="80" rx="3" fill="#308CC0" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="452" y="685" fill="#FFFFFF" class="value" text-anchor="middle">12,408</text>
+<rect x="494" y="640" width="80" height="80" rx="3" fill="#1F83BB" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="534" y="685" fill="#FFFFFF" class="value" text-anchor="middle">28,008</text>
+<rect x="576" y="640" width="80" height="80" rx="3" fill="#499AC8" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="616" y="685" fill="#FFFFFF" class="value" text-anchor="middle">3,689</text>
+<rect x="658" y="640" width="80" height="80" rx="3" fill="#54A0CB" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="698" y="685" fill="#FFFFFF" class="value" text-anchor="middle">2,151</text>
+<rect x="740" y="640" width="80" height="80" rx="3" fill="#F4F7FA" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<rect x="822" y="640" width="80" height="80" rx="3" fill="#358FC2" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="862" y="685" fill="#FFFFFF" class="value" text-anchor="middle">9,519</text>
+<rect x="904" y="640" width="80" height="80" rx="3" fill="#E6EFF6" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="944" y="685" fill="#17212B" class="value" text-anchor="middle">1</text>
+<text x="312" y="767" fill="#17212B" class="axis" text-anchor="end">Other</text>
+<rect x="330" y="722" width="80" height="80" rx="3" fill="#2A89BF" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="370" y="767" fill="#FFFFFF" class="value" text-anchor="middle">16,077</text>
+<rect x="412" y="722" width="80" height="80" rx="3" fill="#338EC1" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="452" y="767" fill="#FFFFFF" class="value" text-anchor="middle">10,662</text>
+<rect x="494" y="722" width="80" height="80" rx="3" fill="#6FAED3" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="534" y="767" fill="#17212B" class="value" text-anchor="middle">604</text>
+<rect x="576" y="722" width="80" height="80" rx="3" fill="#4E9CC9" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="616" y="767" fill="#FFFFFF" class="value" text-anchor="middle">2,928</text>
+<rect x="658" y="722" width="80" height="80" rx="3" fill="#3E94C4" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="698" y="767" fill="#FFFFFF" class="value" text-anchor="middle">6,377</text>
+<rect x="740" y="722" width="80" height="80" rx="3" fill="#3C93C4" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="780" y="767" fill="#FFFFFF" class="value" text-anchor="middle">6,869</text>
+<rect x="822" y="722" width="80" height="80" rx="3" fill="#F4F7FA" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<rect x="904" y="722" width="80" height="80" rx="3" fill="#B4D4E7" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="944" y="767" fill="#17212B" class="value" text-anchor="middle">21</text>
+<text x="312" y="849" fill="#17212B" class="axis" text-anchor="end">Missing</text>
+<rect x="330" y="804" width="80" height="80" rx="3" fill="#6DAED2" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="370" y="849" fill="#17212B" class="value" text-anchor="middle">647</text>
+<rect x="412" y="804" width="80" height="80" rx="3" fill="#5EA5CE" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="452" y="849" fill="#FFFFFF" class="value" text-anchor="middle">1,383</text>
+<rect x="494" y="804" width="80" height="80" rx="3" fill="#4798C7" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="534" y="849" fill="#FFFFFF" class="value" text-anchor="middle">4,172</text>
+<rect x="576" y="804" width="80" height="80" rx="3" fill="#5FA6CE" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="616" y="849" fill="#FFFFFF" class="value" text-anchor="middle">1,266</text>
+<rect x="658" y="804" width="80" height="80" rx="3" fill="#57A1CC" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="698" y="849" fill="#FFFFFF" class="value" text-anchor="middle">1,922</text>
+<rect x="740" y="804" width="80" height="80" rx="3" fill="#BCD8E9" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="780" y="849" fill="#17212B" class="value" text-anchor="middle">14</text>
+<rect x="822" y="804" width="80" height="80" rx="3" fill="#6BACD1" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="862" y="849" fill="#17212B" class="value" text-anchor="middle">739</text>
+<rect x="904" y="804" width="80" height="80" rx="3" fill="#F4F7FA" stroke="#FFFFFF" stroke-width="1" class="matrix-cell"/>
+<text x="345" y="217" fill="#17212B" class="matrix-column-label" text-anchor="start" transform="rotate(-48 345 217)">Benign</text>
+<text x="427" y="217" fill="#17212B" class="matrix-column-label" text-anchor="start" transform="rotate(-48 427 217)">Likely benign</text>
+<text x="509" y="217" fill="#17212B" class="matrix-column-label" text-anchor="start" transform="rotate(-48 509 217)">VUS</text>
+<text x="591" y="217" fill="#17212B" class="matrix-column-label" text-anchor="start" transform="rotate(-48 591 217)">Likely pathogenic</text>
+<text x="673" y="217" fill="#17212B" class="matrix-column-label" text-anchor="start" transform="rotate(-48 673 217)">Pathogenic</text>
+<text x="755" y="217" fill="#17212B" class="matrix-column-label" text-anchor="start" transform="rotate(-48 755 217)">Conflict</text>
+<text x="837" y="217" fill="#17212B" class="matrix-column-label" text-anchor="start" transform="rotate(-48 837 217)">Other</text>
+<text x="919" y="217" fill="#17212B" class="matrix-column-label" text-anchor="start" transform="rotate(-48 919 217)">Missing</text>
+<text x="330" y="924" fill="#17212B" class="small">Log-scaled count</text>
+<rect x="445" y="912" width="34" height="14" fill="#F4F7FA"/>
+<rect x="479" y="912" width="34" height="14" fill="#D1E4F0"/>
+<rect x="513" y="912" width="34" height="14" fill="#AED1E5"/>
+<rect x="547" y="912" width="34" height="14" fill="#8BBEDB"/>
+<rect x="581" y="912" width="34" height="14" fill="#69ABD1"/>
+<rect x="615" y="912" width="34" height="14" fill="#4698C7"/>
+<rect x="649" y="912" width="34" height="14" fill="#2385BC"/>
+<rect x="683" y="912" width="34" height="14" fill="#0072B2"/>
+<text x="435" y="946" fill="#17212B" class="small" text-anchor="middle">0</text>
+<text x="717" y="946" fill="#17212B" class="small" text-anchor="end">123,962</text>
+<text x="56" y="1026" fill="#17212B" class="small">Source: results/full-v1/transition_matrix.parquet · Cell labels are exact counts; only color is log-scaled.</text>
+</svg>

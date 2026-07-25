@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+title: "ClinVar classification history"
+type: software
+version: "0.1.0"
+date-released: "2026-07-25"
+authors:
+  - family-names: Ponomarev
+    given-names: Andrew
+    alias: superbsky
+repository-code: https://github.com/superbsky/clinvar-history
+url: https://github.com/superbsky/clinvar-history/blob/main/docs/full-backfill-results.md
+abstract: >-
+  A disk-bounded pipeline for reconstructing longitudinal ClinVar VCV and SCV
+  classification histories and producing audited reclassification analyses.
+keywords:
+  - ClinVar
+  - variant classification
+  - bioinformatics
+  - reclassification
+  - reproducible research
+license: MIT

@@ -1,0 +1,7 @@
+##fileformat=VCFv4.2
+##fileDate=20240101
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+1	100	123	A	G	.	.	ALLELEID=456;CLNSIG=Uncertain_significance;CLNREVSTAT=criteria_provided,_single_submitter;GENEINFO=GENE1:1;CLNDISDB=MONDO:0001|MedGen:C0001;CLNVC=single_nucleotide_variant
+2	200	124	C	T	.	.	CLNSIG=Benign
+3	300	125	G	A	.	.	ALLELEID=458;CLNSIG=Likely_benign;CLNREVSTAT=no_assertion_criteria_provided;GENEINFO=GENE2:2;CLNDN=Disease_two;CLNVC=Deletion
+

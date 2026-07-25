@@ -1,0 +1,7 @@
+# This file is generated from ClinVar data.
+# Older snapshots do not contain the later somatic columns.
+#VariationID	ClinicalSignificance	DateLastEvaluated	Description	SubmittedPhenotypeInfo	ReportedPhenotypeInfo	ReviewStatus	CollectionMethod	OriginCounts	Submitter	SCV	SubmittedGeneSymbol
+123	Uncertain significance	2023-12-01	-	Disease one	MONDO:0001, Disease one	criteria provided, single submitter	clinical testing	germline:1	Lab A	SCV000000001.1	GENE1
+124	Benign	2023-11-01	-	Disease two	MONDO:0002, Disease two	criteria provided, single submitter	clinical testing	germline:2	Lab B	SCV000000002 .1	GENE2
+125	Likely benign	2023-10-01	-	Disease three	MONDO:0003, Disease three	no assertion criteria provided	research	germline:1	Lab C	SCV000000003.4	GENE3
+126	Pathogenic	2023-09-01	-	Disease four	MONDO:0004, Disease four	criteria provided, single submitter	clinical testing	germline:1	Lab D	SCV000000004.1	GENE4

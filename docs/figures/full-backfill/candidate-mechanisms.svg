@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" id="candidate-mechanisms" aria-labelledby="candidate-mechanisms-title candidate-mechanisms-desc">
+<title id="candidate-mechanisms-title">Conservative candidate mechanisms for aggregate transitions</title>
+<desc id="candidate-mechanisms-desc">A descending horizontal bar chart shows counts and shares for eight interval-overlap attribution categories.</desc>
+<style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+.title { font-size: 30px; font-weight: 700; letter-spacing: -0.3px; }
+.subtitle { font-size: 15px; fill: #5B6775; }
+.panel-title { font-size: 17px; font-weight: 700; }
+.axis { font-size: 12px; fill: #5B6775; }
+.label { font-size: 14px; }
+.value { font-size: 13px; font-weight: 650; }
+.small { font-size: 11px; fill: #5B6775; }
+.note { font-size: 13px; fill: #5B6775; }
+.matrix-column-label { font-size: 12px; fill: #5B6775; }
+.grid { stroke: #D8DEE6; stroke-width: 1; }
+.axis-line { stroke: #8A96A3; stroke-width: 1; }</style>
+<rect width="1200" height="720" fill="#FFFFFF"/>
+<text x="56" y="48" fill="#17212B" class="title">Conservative candidate mechanisms</text>
+<text x="56" y="75" fill="#17212B" class="subtitle">Categories are compatible temporal evidence, not proven causes.</text>
+<line x1="355" y1="115" x2="355" y2="625" class="grid"/>
+<text x="355" y="646" fill="#17212B" class="axis" text-anchor="middle">0</text>
+<line x1="490" y1="115" x2="490" y2="625" class="grid"/>
+<text x="490" y="646" fill="#17212B" class="axis" text-anchor="middle">50k</text>
+<line x1="625" y1="115" x2="625" y2="625" class="grid"/>
+<text x="625" y="646" fill="#17212B" class="axis" text-anchor="middle">100k</text>
+<line x1="760" y1="115" x2="760" y2="625" class="grid"/>
+<text x="760" y="646" fill="#17212B" class="axis" text-anchor="middle">150k</text>
+<line x1="895" y1="115" x2="895" y2="625" class="grid"/>
+<text x="895" y="646" fill="#17212B" class="axis" text-anchor="middle">200k</text>
+<line x1="1030" y1="115" x2="1030" y2="625" class="grid"/>
+<text x="1030" y="646" fill="#17212B" class="axis" text-anchor="middle">250k</text>
+<text x="337" y="162" fill="#17212B" class="label" text-anchor="end">SCV added</text>
+<rect x="355" y="145" width="576.07" height="28" rx="4" fill="#0072B2"/>
+<text x="940.07" y="164" fill="#17212B" class="value">213,358  ·  44.49%</text>
+<text x="337" y="223" fill="#17212B" class="label" text-anchor="end">Unexplained</text>
+<rect x="355" y="206" width="426.79" height="28" rx="4" fill="#5B6775"/>
+<text x="790.79" y="225" fill="#17212B" class="value">158,072  ·  32.96%</text>
+<text x="337" y="284" fill="#17212B" class="label" text-anchor="end">Exact matching SCV reclassification</text>
+<rect x="355" y="267" width="121.94" height="28" rx="4" fill="#009E73"/>
+<text x="485.94" y="286" fill="#17212B" class="value">45,162  ·  9.42%</text>
+<text x="337" y="345" fill="#17212B" class="label" text-anchor="end">Multiple candidates</text>
+<rect x="355" y="328" width="58.54" height="28" rx="4" fill="#CC79A7"/>
+<text x="422.54" y="347" fill="#17212B" class="value">21,680  ·  4.52%</text>
+<text x="337" y="406" fill="#17212B" class="label" text-anchor="end">Review precedence changed</text>
+<rect x="355" y="389" width="44.43" height="28" rx="4" fill="#56B4E9"/>
+<text x="408.43" y="408" fill="#17212B" class="value">16,456  ·  3.43%</text>
+<text x="337" y="467" fill="#17212B" class="label" text-anchor="end">Condition changed</text>
+<rect x="355" y="450" width="34.65" height="28" rx="4" fill="#E69F00"/>
+<text x="398.65" y="469" fill="#17212B" class="value">12,833  ·  2.68%</text>
+<text x="337" y="528" fill="#17212B" class="label" text-anchor="end">SCV removed</text>
+<rect x="355" y="511" width="18.86" height="28" rx="4" fill="#D55E00"/>
+<text x="382.86" y="530" fill="#17212B" class="value">6,986  ·  1.46%</text>
+<text x="337" y="589" fill="#17212B" class="label" text-anchor="end">Expert panel added</text>
+<rect x="355" y="572" width="13.44" height="28" rx="4" fill="#F0E442"/>
+<text x="377.44" y="591" fill="#17212B" class="value">4,978  ·  1.04%</text>
+<text x="56" y="696" fill="#17212B" class="small">Source: results/full-v1/event_mechanisms.parquet · Total = 479,525 canonical transitions.</text>
+</svg>

@@ -1,0 +1,6 @@
+# Current schema has appended fields. Parsers must use names, not positions.
+#VariationID	ClinicalSignificance	DateLastEvaluated	Description	SubmittedPhenotypeInfo	ReportedPhenotypeInfo	ReviewStatus	CollectionMethod	OriginCounts	Submitter	SCV	SubmittedGeneSymbol	ExplanationOfInterpretation	SomaticClinicalImpact	Oncogenicity
+123	Likely pathogenic	2024-01-02	-	Disease one	MONDO:0001, Disease one	criteria provided, single submitter	clinical testing	germline:1	Lab A	SCV000000001.2	GENE1	-	-	-
+124	Benign	2024-01-02	-	Disease two	MONDO:0002, Disease two	criteria provided, single submitter	clinical testing	germline:2	Lab B	SCV000000002.2	GENE2	-	-	-
+125	Likely benign	2024-01-02	-	Disease five	MONDO:0005, Disease five	reviewed by expert panel	research	germline:1	Lab C	SCV000000003.5	GENE3	-	-	-
+127	Uncertain significance	2024-01-02	-	Disease six	MONDO:0006, Disease six	no assertion criteria provided	research	germline:1	Lab E	SCV000000005.1	GENE5	-	-	-
