@@ -51,6 +51,10 @@ def build_manifest(start, end, output: Path) -> None:
         )
         releases = resolve_release_checksums(releases, client=client)
     write_manifest(releases, output)
+    from .checkpoints import stamp_checkpoint
+    from .runner import manifest_request
+
+    stamp_checkpoint(output, manifest_request(start_date, end_date))
     click.echo(f"Wrote {len(releases)} releases to {output}")
 
 
@@ -166,6 +170,91 @@ def attribute_events(root: Path, output: Path, max_lag_days: int) -> None:
         max_lag_days=max_lag_days,
     )
     click.echo(f"Wrote {len(attributions)} attributions to {output}")
+
+
+@main.command("run-study")
+@click.option("--root", type=click.Path(path_type=Path), default=Path("data/full"))
+@click.option(
+    "--results", type=click.Path(path_type=Path), default=Path("results/full-v1")
+)
+@click.option("--start", type=click.DateTime(formats=["%Y-%m-%d"]), required=True)
+@click.option("--end", type=click.DateTime(formats=["%Y-%m-%d"]), required=True)
+@click.option(
+    "--offline",
+    is_flag=True,
+    help="Use completed local data; never access the network.",
+)
+@click.option("--refresh-manifest", is_flag=True)
+@click.option("--max-lag-days", type=click.IntRange(min=0), default=35)
+@click.option("--attempts", type=click.IntRange(min=1), default=3)
+@click.option("--retry-delay", type=click.FloatRange(min=0, max=60), default=10)
+def run_study(root, results, start, end, **options):
+    """Run ingestion and analyses with semantic checkpoint validation."""
+    from .runner import run_study as run
+
+    try:
+        run(root.resolve(), results.resolve(), start.date(), end.date(), **options)
+    except ValueError as error:
+        raise click.ClickException(str(error)) from error
+
+
+@main.command("adopt-legacy")
+@click.option("--root", type=click.Path(path_type=Path, exists=True), required=True)
+@click.option("--results", type=click.Path(path_type=Path, exists=True), required=True)
+@click.option("--start", type=click.DateTime(formats=["%Y-%m-%d"]), required=True)
+@click.option("--end", type=click.DateTime(formats=["%Y-%m-%d"]), required=True)
+def adopt_legacy(root, results, start, end):
+    """Audit and register retained v0.1 artifacts for managed updates."""
+    from .runner import adopt_legacy as adopt
+
+    try:
+        adopt(root, results, start.date(), end.date())
+    except ValueError as error:
+        raise click.ClickException(str(error)) from error
+
+
+@main.command("review-xml")
+@click.option("--root", type=click.Path(path_type=Path, exists=True), required=True)
+@click.option(
+    "--attributions", type=click.Path(path_type=Path, exists=True), required=True
+)
+@click.option("--output", type=click.Path(path_type=Path), required=True)
+@click.option("--limit", type=click.IntRange(1, 100), default=12)
+@click.option("--seed", type=int, default=20261111)
+@click.option("--max-record-bytes", type=click.IntRange(min=1), default=2_000_000)
+@click.option("--max-total-bytes", type=click.IntRange(min=1), default=20_000_000)
+@click.option("--offline", is_flag=True)
+def review_xml(**options):
+    """Review a bounded sample of unexplained transitions against current XML."""
+    from .xml_review import review_sample
+
+    try:
+        result = review_sample(**options)
+    except ValueError as error:
+        raise click.ClickException(str(error)) from error
+    click.echo(
+        f"XML sample: {result['status_counts']}; {result['total_xml_bytes']} bytes"
+    )
+
+
+@main.command("compare-xml-versions")
+@click.option("--variation-id", type=click.IntRange(min=1), required=True)
+@click.option("--old-version", type=click.IntRange(min=1), required=True)
+@click.option("--new-version", type=click.IntRange(min=1), required=True)
+@click.option("--output", type=click.Path(path_type=Path), required=True)
+@click.option("--max-record-bytes", type=click.IntRange(min=1), default=2_000_000)
+@click.option("--offline", is_flag=True)
+def compare_xml_versions(**options):
+    """Compare SCV evidence in two explicitly versioned VCV XML records."""
+    from .xml_review import compare_versions
+
+    try:
+        result = compare_versions(**options)
+    except ValueError as error:
+        raise click.ClickException(str(error)) from error
+    click.echo(
+        f"Compared versions: {len(result['scv_changes'])} SCV differences; historical causality unconfirmed"
+    )
 
 
 if __name__ == "__main__":

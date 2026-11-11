@@ -316,3 +316,24 @@ def test_ingest_vcf_cli_exposes_bounded_storage_options():
     assert "--manifest" in result.output
     assert "--root" in result.output
     assert "--keep-raw" in result.output
+
+
+def test_completed_release_rejects_changed_source_identity(tmp_path):
+    release = _release(1, "release_a.vcf")
+    ingest_vcf_releases([release], root=tmp_path, source=_fixture_source)
+    with pytest.raises(ValueError, match="identity changed"):
+        ingest_vcf_releases(
+            [replace(release, size_bytes=release.size_bytes + 1)],
+            root=tmp_path,
+            source=_fixture_source,
+        )
+
+
+def test_completed_release_rejects_changed_normalization_version(tmp_path, monkeypatch):
+    from clinvar_history import checkpoints
+
+    release = _release(1, "release_a.vcf")
+    ingest_vcf_releases([release], root=tmp_path, source=_fixture_source)
+    monkeypatch.setitem(checkpoints.VERSIONS, "normalization", 2)
+    with pytest.raises(ValueError, match="versions changed"):
+        ingest_vcf_releases([release], root=tmp_path, source=_fixture_source)

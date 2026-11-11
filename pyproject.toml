@@ -42,6 +42,13 @@ dev = [
     "pytest>=8.4",
     "ruff>=0.12",
 ]
+research = [
+    "lxml>=5.4",
+    "matplotlib>=3.10",
+    "numpy>=2.2",
+    "scipy>=1.15",
+    "statsmodels>=0.14",
+]
 
 [build-system]
 requires = ["hatchling==1.31.0"]

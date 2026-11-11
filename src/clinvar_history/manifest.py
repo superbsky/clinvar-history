@@ -139,7 +139,9 @@ def write_manifest(releases: Sequence[ReleaseFile], output: Path) -> None:
             "md5": [item.md5 for item in releases],
         }
     )
-    pq.write_table(table, output, compression="zstd")
+    from .storage import _atomic_write_table
+
+    _atomic_write_table(table, output)
 
 
 def read_manifest(path: Path) -> list[ReleaseFile]:
