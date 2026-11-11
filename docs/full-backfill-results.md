@@ -1,5 +1,8 @@
 # ClinVar Classification History: Full-Backfill Final Report
 
+> July baseline results. The [November full research extension](full-research-results.md) distinguishes net count recovery from matched-edge recall and adds reversible-batch, full-cohort and historical XML analyses that qualify these earlier results.
+
+
 **Study window:** 6 January 2020–24 July 2026<br>
 **Latest source releases:** GRCh38 VCF, 15 July 2026; submission summary,
 July 2026<br>

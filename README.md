@@ -13,15 +13,32 @@ question that quarterly snapshots cannot: which intermediate and recurrent
 changes occurred, and which aggregate changes have evidence of an underlying
 SCV reclassification rather than a change in submission composition?
 
+## Full research extension (November 2026)
+
+The [full research report](docs/full-research-results.md) analyzes complete
+incident cohorts, separates net endpoint counts from matched transition-edge
+recall, and investigates a short reversible
+August 2022 batch with dated and explicitly versioned XML. That window accounts
+for 93.07% of the monthly net-count loss in the extended dataset; omitting its
+observations is a sensitivity analysis, not a correction of clinical truth.
+
+The [Liang et al. comparison](docs/liang-crosscheck.md) cross-checks
+released case histories and the additional content of submonthly observations.
+
+See the [protocol and reproduction commands](docs/research-protocol.md),
+[literature assessment](docs/literature-evidence.md), tables and figures in the
+report. Research dependencies are optional:
+`uv sync --locked --all-groups`.
+
 ## Full-backfill results
 
-The completed 6 January 2020–24 July 2026 backfill produced these audited
-headlines:
+The frozen July analysis, configured for 6 January 2020–24 July 2026,
+produced these audited headlines:
 
 - 417 releases total (338 VCF + 79 SCV), all completed;
 - 479,525 canonical VCV transitions;
 - aggregate VUS count increased from 217,177 to 2,315,022 (10.66x);
-- against the release-level event log, transition recall was 99.91% for the
+- against the release-level event log, net transition count recovery was 99.91% for the
   regular 7-day grid, 80.58% monthly, and 79.35% quarterly.
 
 The [full English report](docs/full-backfill-results.md) documents the methods,
@@ -36,7 +53,8 @@ figures, audit evidence, and limitations.
 - quarterly baseline, sampling-bias, transition, dwell-time, competing-risk,
   and mechanism result tables.
 
-Full ClinVar XML is deliberately excluded. Compressed source releases are
+Full ClinVar XML ingestion remains outside the production pipeline; a separate
+bounded research workflow streams two dated XML archives and keeps selected records. Compressed source releases are
 streamed, checked against an official `.md5` sidecar when one is available, and
 discarded unless `--keep-raw` is explicitly set.
 
@@ -64,12 +82,11 @@ retained dataset under `data/full`, and writes all seven result Parquets under
 `results/full-v1`. Networked stages retry, completed ingestion is skipped, and
 valid result checkpoints are reused.
 
-Checkpoint reuse is only structural/readability-based, not semantic validation:
-a result checkpoint is reused when its Parquet is readable, and ingestion may
-reuse an existing manifest. These checks do not prove that artifacts match a
-changed date horizon or configuration. For such changes, use fresh
-manifest/data/result paths or remove the existing manifest and checkpoints
-before rerunning.
+The managed runner verifies checkpoint provenance against manifest content, study
+dates, processing versions, analysis code, parameters and SHA-256 input/output
+hashes. Legacy readable Parquets are recomputed rather than silently reused.
+Ingestion rejects incompatible completed history before downloading new releases.
+See [checkpoint provenance](#checkpoint-provenance) for migration and safe updates.
 
 ### Equivalent manual stages and customization
 
@@ -150,6 +167,113 @@ This command is also offline. It verifies manifest/ledger agreement, available
 official checksums, state and episode invariants, result schemas, and the shared
 479,525-transition total before writing dependency-free SVG figures. Its JSON
 stdout contains the recomputed headline metrics.
+
+## Checkpoint provenance
+
+A managed result is a Parquet plus an adjacent `.parquet.checkpoint.json` file.
+The JSON records the exact identity and SHA-256 of the output. Missing, corrupt,
+modified or incompatible checkpoints are recomputed into a temporary file before
+publication. A failed calculation preserves the previous published result.
+The manifest has its own date-bound identity. Raw readable files are never adopted
+as result checkpoints automatically.
+
+The dataset ledger records each release's complete source identity and processing
+versions. Schema, normalization and ingestion versions are explicit; parser,
+normalization, diff and storage source hashes additionally guard against forgotten
+version bumps. Changing source dates, URLs, sizes or checksums, removing completed
+history or inserting earlier releases requires a separate data root. Appending a
+chronological suffix is supported. Bump the semantic version constants in
+`checkpoints.py` when persisted meanings change.
+
+For the retained **v0.1** dataset, audit and register it once:
+
+```bash
+uv run clinvar-history adopt-legacy \
+  --root data/full --results results/full-v1 \
+  --start 2020-01-01 --end 2026-07-24
+```
+
+Adoption validates retained artifacts and records the declared v0.1 provenance.
+It cannot prove old source-code identity from Parquet alone, and it refuses to
+relabel an already versioned dataset. Legacy analysis outputs remain unverified;
+the first managed analysis recomputes them. Preserve the published study with a
+new result directory when exploring changed analysis settings.
+
+To recalculate from the completed local dataset without network access:
+
+```bash
+uv run clinvar-history run-study \
+  --root data/full --results results/verified-study \
+  --start 2020-01-01 --end 2026-07-24 --offline
+```
+
+For a later end date, run the same command without `--offline`, set the new
+`--end`, and keep the original start date. A new date horizon triggers manifest
+discovery; `--refresh-manifest` also refreshes an unchanged horizon. The existing
+history must still match before ingestion. Result identities include the new
+horizon and input content, preventing reuse of old censored outcomes.
+Networked stages retry at most three times by default; configure `--attempts` and
+`--retry-delay` or the corresponding runner environment variables. Disk capacity
+is checked before source ingestion. Sources stream as documented;
+raw releases are not retained by the managed runner.
+
+Manual analysis commands above remain available and write ordinary Parquets.
+Use `run-study` for managed reuse; manual outputs do not acquire verified
+checkpoint identities simply by occupying the expected paths.
+
+## Exploratory analyses
+
+The [research protocol](docs/research-protocol.md) defines the observation units,
+endpoints and limitations. The commands below support bounded exploratory runs
+within the July study horizon.
+
+Run the bounded first-episode competing-risk pilot using retained episodes:
+
+```bash
+uv run python analysis/08_competing_risks.py \
+  --root data/full \
+  --episodes results/full-v1/vus_time_to_resolution.parquet \
+  --manifest data/full/manifest/releases.parquet --layer vcv \
+  --cohort-start 2020-01-07 --cohort-end 2020-12-31 \
+  --study-end 2026-07-24 --max-clusters 5000 --replicates 200 \
+  --output results/contributor-pilot/vcv_competing_risks.parquet
+uv run python analysis/08_competing_risks.py \
+  --episodes results/full-v1/scv_vus_time_to_resolution.parquet \
+  --manifest data/full/manifest/releases.parquet --layer scv \
+  --cohort-start 2020-02-01 --cohort-end 2020-12-31 \
+  --study-end 2026-07-24 --max-clusters 5000 --replicates 200 \
+  --output results/contributor-pilot/scv_competing_risks.parquet
+```
+
+The pilot estimates Aalen–Johansen cumulative incidence of first exits to B/LB,
+P/LP, conflict and other states, with variant-cluster bootstrap intervals.
+It reports midpoint and removal sensitivities; `--root` additionally reconstructs
+monthly and quarterly VCV snapshots. The first incident episode is selected before
+cohort filtering. These are observation-time research estimates, not fitted
+interval-censored biological event-time distributions. Optional `--stratum`,
+`--horizons`, `--seed` and resource bounds are shown in `--help`.
+
+Run the bounded current-XML evidence review, then write the report:
+
+```bash
+uv run clinvar-history review-xml \
+  --root data/full --attributions results/full-v1/attributions.parquet \
+  --output results/contributor-pilot/xml --limit 12 \
+  --max-record-bytes 2000000 --max-total-bytes 20000000
+uv run clinvar-history compare-xml-versions \
+  --variation-id 978448 --old-version 1 --new-version 2 \
+  --output results/contributor-pilot/xml-version-pair
+uv run python analysis/09_build_contributor_report.py \
+  --pilot-root results/contributor-pilot --output results/contributor-pilot/report.md
+```
+
+Use `review-xml --offline` with the same arguments to verify and reuse cached
+responses. The review preserves extra evidence and retrieval provenance, separates
+germline from other assertions and leaves historical causes unresolved when only
+current XML is available. `compare-xml-versions` additionally checks two explicit
+VCV versions and rejects fallback to another version. The report includes a
+historical submission-composition example and the limitations of version-specific
+XML as a release-date snapshot. XML caches and generated result files stay outside Git.
 
 ## Why higher temporal resolution matters
 

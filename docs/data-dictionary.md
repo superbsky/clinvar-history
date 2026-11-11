@@ -128,6 +128,8 @@ and must not be reported as proven causality.
 | `status` | `processing`, `completed`, or `failed` |
 | `started_at`, `completed_at` | Pipeline timestamps |
 | `error` | Last failure message |
+| `release_identity` | SHA-256 of the canonical source release metadata |
+| `processing_versions` | JSON schema, normalization, ingestion versions and implementation hash |
 | `source_md5` | Checksum calculated while streaming the compressed source |
 | `official_md5` | Sidecar checksum recorded when processing began |
 
@@ -161,3 +163,36 @@ episodes are right-censored at the configured study end; removal is censored
 at its observation date. Conflict and other non-VUS exits are explicit
 observed outcomes rather than censoring. VUS inventory in the first snapshot
 is excluded from resolution outputs because its true onset predates the study.
+
+## Managed checkpoint provenance
+
+A managed manifest or result has an adjacent `.parquet.checkpoint.json` with
+`format`, `identity` and `sha256`. Result identity includes canonical manifest
+content, study dates, processing versions, event-store/ledger content, analysis
+implementation and stage parameters. The mechanism summary additionally records
+the attribution file hash. Metadata is published only after decoding the output;
+the output digest binds metadata to the exact Parquet. Missing provenance never
+counts as a reusable managed checkpoint.
+
+## Contributor pilot outputs
+
+`vcv_competing_risks.parquet` and `scv_competing_risks.parquet` contain `layer`,
+`timing`, `removal_as_exit`, `stratum`, `episodes`, `clusters`, `censored`, `day`,
+`at_risk`, `supported`, `survival` and four cause-specific cumulative incidences.
+Each cause has `_lower`, `_upper` and `_bootstrap_supported` fields. Unsupported
+horizons have null estimates; intervals require 95% bootstrap support. All risks
+refer to the first observed incident episode and first exit. The output includes
+pointwise variant-cluster percentile intervals and timing/removal sensitivities.
+VCV outputs can additionally include actual monthly/quarterly snapshot analyses.
+
+`xml/review.json` retains the deterministic stratified sample, population counts,
+current XML extraction, accessions, extra-field availability and explicit
+unresolved historical status. Each cached response has a separate JSON record
+with URL, retrieval timestamp, byte count and SHA-256. Current records are not
+historical snapshots and do not alter the original attribution results.
+
+`xml-version-pair/comparison.json` preserves both explicitly requested VCV
+versions, exact response provenance, and added/removed/updated SCV fields.
+Version mismatch is an error. SCV label, review, contribution and version changes
+are evidence between VCV versions; the comparison does not assign historical
+causes or rewrite attribution outputs.

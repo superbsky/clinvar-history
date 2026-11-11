@@ -353,20 +353,12 @@ def test_readme_has_publication_header_and_canonical_full_run():
     assert "modern full releases have not yet been benchmarked" not in readme
 
 
-def test_readme_defines_checkpoint_reuse_as_structural_not_semantic():
+def test_readme_documents_managed_provenance_and_legacy_recomputation():
     readme = (ROOT / "README.md").read_text()
-    run = _readme_section(readme, "Run")
-
-    required = (
-        "only structural/readability-based, not semantic validation",
-        "Parquet is readable",
-        "existing manifest",
-        "changed date horizon or configuration",
-        "fresh manifest/data/result paths",
-        "remove the existing manifest and checkpoints",
-    )
-    for expected in required:
-        assert expected in run
+    assert "Legacy readable Parquets are recomputed" in readme
+    assert "SHA-256 input/output" in readme
+    assert "adopt-legacy" in readme
+    assert "--offline" in readme
 
 
 def test_readme_full_backfill_results_section_has_audited_claims():

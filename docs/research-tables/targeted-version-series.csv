@@ -1,0 +1,11 @@
+"variation_id","status","stratum","before_label","middle_label","after_label","matches_vcf_round_trip","assertion_identity_labels_versions_stable","changed_fields_first","changed_fields_second","review_status_round_trip"
+632819,"retrieved","Conflicting interpretations of pathogenicity -> Uncertain significance","Conflicting classifications of pathogenicity","Uncertain significance","Conflicting classifications of pathogenicity",true,true,"review_status","review_status",true
+262866,"retrieved","Benign/Likely benign -> Likely benign","Benign/Likely benign","Likely benign","Benign/Likely benign",true,true,"review_status","review_status",true
+120253,"retrieved","Benign/Likely benign -> Benign","Benign/Likely benign","Benign","Benign/Likely benign",true,true,"review_status","review_status",true
+989977,"retrieved","Likely benign -> Conflicting interpretations of pathogenicity","Likely benign","Conflicting classifications of pathogenicity","Likely benign",true,true,"review_status","review_status",true
+926539,"retrieved","Conflicting interpretations of pathogenicity -> Likely benign","Conflicting classifications of pathogenicity","Likely benign","Conflicting classifications of pathogenicity",true,true,"review_status","review_status",true
+994195,"retrieved","Pathogenic/Likely pathogenic -> Likely pathogenic","Pathogenic/Likely pathogenic","Likely pathogenic","Pathogenic/Likely pathogenic",true,true,"review_status","review_status",true
+203962,"retrieved","Conflicting interpretations of pathogenicity -> Likely pathogenic","Conflicting classifications of pathogenicity","Likely pathogenic","Conflicting classifications of pathogenicity",true,true,"review_status","review_status",true
+708920,"retrieved","Benign -> Benign/Likely benign","Benign","Benign/Likely benign","Benign",true,true,"review_status","review_status",true
+1041793,"retrieved","Uncertain significance -> Conflicting interpretations of pathogenicity","Uncertain significance","Conflicting classifications of pathogenicity","Uncertain significance",true,true,"review_status","review_status",true
+426414,"retrieved","Pathogenic/Likely pathogenic -> Pathogenic","Pathogenic/Likely pathogenic","Pathogenic","Pathogenic/Likely pathogenic",true,true,"review_status","review_status",true

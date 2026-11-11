@@ -1,0 +1,238 @@
+"variation_id","observed_at","new_family","old_family","variant_has_monthly_reversal","variant_in_published_reversal_table","old_raw_classification","new_raw_classification","primary_old_family","primary_new_family","primary_policy_direct_reversal"
+126807,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+126807,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+143185,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+143185,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+254641,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+254641,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1048566,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1048566,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319075,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319075,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319076,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319076,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319091,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319091,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319110,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319110,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319114,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319114,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319121,2023-07-10,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319121,2023-07-17,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319129,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319129,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319147,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319147,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319154,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319154,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319159,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319159,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319165,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319165,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319166,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319166,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319170,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319170,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319173,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319173,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319175,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319175,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319177,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319177,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319180,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319180,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319183,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319183,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319187,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319187,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319192,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319192,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319201,2023-07-10,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319201,2023-07-17,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319223,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319223,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319230,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319230,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319248,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319248,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319259,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319259,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319260,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319260,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319265,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319265,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319269,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319269,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319270,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319270,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319282,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319282,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319321,2023-07-10,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319321,2023-07-17,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319324,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319324,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319337,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319337,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319348,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319348,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319369,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319369,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319370,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319370,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319371,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319371,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319375,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319375,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319379,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319379,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319380,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319380,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319386,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319386,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319395,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319395,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319400,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319400,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319403,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319403,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319419,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319419,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319421,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319421,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319438,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319438,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319444,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319444,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319465,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319465,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319469,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319469,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319472,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319472,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319478,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319478,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319482,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319482,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319484,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319484,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319497,2023-07-10,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319497,2023-07-17,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319502,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319502,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319508,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319508,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319519,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319519,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319526,2023-07-10,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319526,2023-07-17,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319559,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319559,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319560,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319560,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319564,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319564,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319568,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319568,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319578,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319578,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319579,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319579,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319582,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319582,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319603,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319603,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319605,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319605,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319614,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319614,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319616,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319616,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319617,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319617,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319664,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319664,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319668,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319668,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319673,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319673,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319693,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319693,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319697,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319697,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319701,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319701,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319723,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319723,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319725,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319725,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319727,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319727,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319728,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319728,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319729,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319729,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319731,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319731,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319735,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319735,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319744,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319744,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319752,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319752,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319757,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319757,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319774,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319774,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319780,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319780,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319783,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319783,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319789,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319789,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319790,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319790,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319792,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319792,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319793,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319793,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319794,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319794,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319795,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319795,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319802,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319802,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319805,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319805,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319806,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319806,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319812,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319812,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319815,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319815,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319816,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319816,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319817,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319817,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319823,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319823,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319827,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319827,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319830,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319830,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319834,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319834,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319838,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319838,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1319843,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319843,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319865,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319865,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319873,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319873,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319875,2023-07-10,"benign","pathogenic",false,false,"Pathogenic","Benign","pathogenic","benign",true
+1319875,2023-07-17,"pathogenic","benign",false,false,"Benign","Pathogenic","benign","pathogenic",true
+1319900,2023-07-10,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+1319900,2023-07-17,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+1661415,2022-08-12,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true
+2578371,2023-09-23,"benign","pathogenic",false,false,"Likely pathogenic","Likely benign","pathogenic","benign",true
+3069135,2024-10-21,"pathogenic","benign",false,false,"Likely benign","Likely pathogenic","benign","pathogenic",true

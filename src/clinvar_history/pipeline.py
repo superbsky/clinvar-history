@@ -1,6 +1,7 @@
 """Resumable, disk-bounded ingestion orchestration."""
 
 import hashlib
+import json
 import os
 import re
 import tempfile
@@ -189,6 +190,45 @@ def _create_ledger(connection: duckdb.DuckDBPyConnection) -> None:
     connection.execute(
         "ALTER TABLE pipeline_runs ADD COLUMN IF NOT EXISTS official_md5 VARCHAR"
     )
+    connection.execute(
+        "ALTER TABLE pipeline_runs ADD COLUMN IF NOT EXISTS release_identity VARCHAR"
+    )
+    connection.execute(
+        "ALTER TABLE pipeline_runs ADD COLUMN IF NOT EXISTS processing_versions VARCHAR"
+    )
+
+
+def _validate_completed_identity(connection, releases, kind) -> None:
+    from .checkpoints import processing_versions, release_identity, validate_manifest
+
+    if releases:
+        validate_manifest(releases)
+    columns = {r[0] for r in connection.execute("DESCRIBE pipeline_runs").fetchall()}
+    if not {"release_identity", "processing_versions"} <= columns:
+        raise ValueError("Legacy dataset needs adopt-legacy before checkpoint reuse")
+    stored = {
+        url: (identity, versions, release_date)
+        for url, identity, versions, release_date in connection.execute(
+            "SELECT url, release_identity, processing_versions, release_date FROM pipeline_runs "
+            "WHERE kind = ? AND status = 'completed'",
+            [kind.value],
+        ).fetchall()
+    }
+    ingestion_versions = processing_versions()
+    for release in releases:
+        if release.url not in stored:
+            continue
+        identity, versions, stored_date = stored[release.url]
+        if identity is None or versions is None:
+            raise ValueError(
+                "Legacy dataset needs adopt-legacy before checkpoint reuse"
+            )
+        if json.loads(versions) != ingestion_versions:
+            raise ValueError(
+                "Dataset processing versions changed; rebuild in a new root"
+            )
+        if identity != release_identity(release) or stored_date != release.release_date:
+            raise ValueError("Completed release identity changed; use a new root")
 
 
 def _completed_urls(
@@ -259,14 +299,17 @@ def _mark_started(
     connection: duckdb.DuckDBPyConnection,
     release: ReleaseFile,
 ) -> None:
+    from .checkpoints import canonical, processing_versions, release_identity
+
     connection.execute(
         """
         INSERT INTO pipeline_runs
             (
                 kind, url, release_date, status, started_at,
-                completed_at, error, source_md5, official_md5
+                completed_at, error, source_md5, official_md5,
+                release_identity, processing_versions
             )
-        VALUES (?, ?, ?, 'processing', ?, NULL, NULL, NULL, ?)
+        VALUES (?, ?, ?, 'processing', ?, NULL, NULL, NULL, ?, ?, ?)
         ON CONFLICT (kind, url) DO UPDATE SET
             release_date = excluded.release_date,
             status = excluded.status,
@@ -274,7 +317,9 @@ def _mark_started(
             completed_at = NULL,
             error = NULL,
             source_md5 = NULL,
-            official_md5 = excluded.official_md5
+            official_md5 = excluded.official_md5,
+            release_identity = excluded.release_identity,
+            processing_versions = excluded.processing_versions
         """,
         [
             release.kind.value,
@@ -282,6 +327,8 @@ def _mark_started(
             release.release_date,
             datetime.now(UTC),
             release.md5,
+            release_identity(release),
+            canonical(processing_versions()),
         ],
     )
 
@@ -397,6 +444,7 @@ def ingest_vcf_releases(
             ReleaseKind.VCF,
         )
         _validate_completed_prefix(vcf_releases, completed)
+        _validate_completed_identity(connection, vcf_releases, ReleaseKind.VCF)
         completed_releases = [
             release for release in vcf_releases if release.url in completed
         ]
@@ -485,6 +533,9 @@ def ingest_submission_releases(
             ReleaseKind.SUBMISSION_SUMMARY,
         )
         _validate_completed_prefix(submission_releases, completed)
+        _validate_completed_identity(
+            connection, submission_releases, ReleaseKind.SUBMISSION_SUMMARY
+        )
         completed_releases = [
             release for release in submission_releases if release.url in completed
         ]

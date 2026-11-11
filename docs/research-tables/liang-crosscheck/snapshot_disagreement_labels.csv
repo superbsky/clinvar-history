@@ -1,0 +1,15 @@
+"paper_raw","reported_category","vcf_raw","vcf_paper_category","cases"
+"Benign","B","Pathogenic","P",13
+"Pathogenic","P","Benign","B",12
+"Pathogenic","P","Conflicting classifications of pathogenicity","Conflicting",8
+"Likely benign","LB","Pathogenic","P",6
+"Uncertain significance","VUS","Conflicting classifications of pathogenicity","Conflicting",5
+"Likely benign","LB","Benign","B",3
+"Benign","B","Conflicting classifications of pathogenicity","Conflicting",3
+"Pathogenic","P","Benign/Likely benign","B/LB",3
+"Benign","B","Benign/Likely benign","B/LB",2
+"Uncertain significance","VUS","Benign","B",2
+"Pathogenic","P","Likely benign","LB",2
+"Uncertain significance","VUS","Benign/Likely benign","B/LB",1
+"Benign","B","Pathogenic/Likely pathogenic","P/LP",1
+"Likely pathogenic","LP","Conflicting classifications of pathogenicity","Conflicting",1
